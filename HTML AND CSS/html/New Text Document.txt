@@ -1,0 +1,14 @@
+<html dir = "rtl">
+	<head>
+	<title>Table</title>
+	</head>
+	<body>
+		<h1>Unordered list</h1>
+		<ul>
+			<li>Kamal</li>
+			<li>Bubby</li>
+			<li>Param</li>
+			<li>Karam</li>
+		</ul>
+	</body>
+</html>
