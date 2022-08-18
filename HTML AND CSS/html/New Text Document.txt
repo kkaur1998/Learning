@@ -1,14 +1,10 @@
-<html dir = "rtl">
+<html>
 	<head>
-	<title>Table</title>
+	<title>Hyperlink</title>
 	</head>
 	<body>
-		<h1>Unordered list</h1>
-		<ul>
-			<li>Kamal</li>
-			<li>Bubby</li>
-			<li>Param</li>
-			<li>Karam</li>
-		</ul>
+		<h1>attaching document</h1>
+		<a href="definition.html" target = "_blank">Definition List</a>
+		<a href="orderedlist.html" target = "_self">ordered List</a>
 	</body>
 </html>
