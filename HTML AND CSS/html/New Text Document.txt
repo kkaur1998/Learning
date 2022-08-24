@@ -1,10 +1,38 @@
 <html>
 	<head>
-	<title>Hyperlink</title>
+	<title>HTML Frames</title>
 	</head>
+
+
+<!-- 	
+------------------------------------------------------
+	<h1>internal linking of html</h1>
+		<h2>Top of the page <a name = "top"></a></h2>
+		<div>
+			<a href = "#bottom">Go to the bottom of page</a>
+			<img src = "https://unsplash.com/photos/XW368ZQrrSk" height= "100%">
+		<h2>Bottom of the page <a name = "bottom"></a></h2>
+		<div>
+			<a href = "#top">Go to the top of the page</a>
+						
+			
+		</div>
+----------------------------------------------------------------------------------------------------
+-->
+		<frameset cols= "20%,80%" border= "1" framespacing = "20">
+			<frame marginwidth="10" name = "left" src = "first.html">
+				<a href="www.google.com">Search on goolgle</a>
+			</frame>
+			<frame  marginwidth="10" name = "right" src = "orderedlist.html">
+			</frame>
+			
+		</frameset>
+		<noframes>
+			<body>
+				Your Browser does not support frames.
+			</body>
+		</noframes>
 	<body>
-		<h1>attaching document</h1>
-		<a href="definition.html" target = "_blank">Definition List</a>
-		<a href="orderedlist.html" target = "_self">ordered List</a>
+
 	</body>
 </html>
