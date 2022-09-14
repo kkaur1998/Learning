@@ -13,4 +13,4 @@ for i in range(n):
         else:
            print("you don't have sufficient balance")
     else:
-        withdraw_amount, balance = input("please enter valid withdraw amount and bank balance).split()
+        withdraw_amount, balance = input("please enter valid withdraw amount and bank balance").split())

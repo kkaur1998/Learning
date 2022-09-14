@@ -8,62 +8,38 @@ marks between 60 to 70:grade'B+'
 marks between 50 to 60:grade'B'
 Display result in the form of dictionary.
 """
-# l1 = ["regno","name"]
-# l2 = ["regno","marks"]
-# dict1 = {}
-# dict2 = {}
-# dict1 = dict1.fromkeys(l1)
-# dict2 = dict2.fromkeys(l2)
-# dict1["regno"],dict1["name"] = input("enter regno and name of student").split()
-# dict2["regno"] = dict1["regno"]
-# dict2["marks"] = int(input("enter marks of student").split())
-
-# for i in dict2.keys()
-
-
-# dict1 = {"1":{"regno": 12345, "name": "kamal"},"2":{"regno": 23456, "name": "sandeep"},"3":{"regno": 34567, "name": "karam"},"4":{"regno": 45678, "name": "param"},"5":{"regno": 56789, "name": "Preet"}}
-# dict2 = {{"regno": 12345, "marks": 80},{"regno": 23456, "marks":70},{"regno": 34567, "marks":65},{"regno": 45678, "marks":86},{"regno": 56789, "marks":95}}
-
 
 
 dict1 = {}
 dict2 = {}
+n = int(input("enter number of studetns"))
 for i in range(2):
     regno = input(f"enter regno of {i+1}th student")
     name = input(f"enter name of {i+1}th student")
     marks = int(input("enter marks of student"))
-    dict1[regno] = {"regno": regno, "name": name}
-    dict2[regno] = {"regno": regno, "marks": marks}
+    dict1[regno] = name
+    dict2[regno] = marks
 print(dict1)
 print(dict2)
 
 for i in dict2.keys():
-    comp = dict2[i][marks]
+    comp = dict2[i]
     if(comp>=0 and comp<=100):
         if(comp > 90 and comp<=100):
-            dict2[i]["grades"] = 'O'
+            dict2[i] = 'O'
         elif(comp > 80 and comp<=90):
-            dict2[i]["grades"] = 'A+'
+            dict2[i] = 'A+'
         elif(comp > 70 and comp<=80):
-            dict2[i]["grades"] = 'A'
+            dict2[i] = 'A'
         elif(comp > 60 and comp<=70):
-            dict2[i]["grades"] = 'B+'
+            dict2[i] = 'B+'
         elif(comp > 50 and comp<=60):
-            dict2[i]["grades"] = 'B'
+            dict2[i] = 'B'
         else:
             print("marks can only be between 0 - 100")
     else:
         print("marks can be 0-100 only")
-
-
-
-
-
-# print(dict1)
-# print(list(dict1.keys()))
-# for i in dict1.keys():
-#     print(i)
-
+print(dict2)
 
 
 

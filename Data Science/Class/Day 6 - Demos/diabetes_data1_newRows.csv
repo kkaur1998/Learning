@@ -1,0 +1,6 @@
+﻿PatientID,Pregnancies,Glucose,DiabetesPedigreeFunction,Outcome
+PT1022,4,95,0.161,1
+PT1023,6,137,0.151,0
+PT1024,5,136,0.286,1
+PT1025,9,72,0.28,0
+PT1026,5,168,0.135,1

@@ -1,3 +1,5 @@
+#count of elements in the list
+
 mylist = input("enter list elements").split()
 print(mylist)
 count_list = []

@@ -1,0 +1,71 @@
+<html>
+	<head>
+	<title>HTML form task</title>
+	</head>
+	<body>
+	<form>
+		<table border="0">
+		<tr>
+			<td>Name: </td>
+			<td><input type= text name = "name" required/></td>
+		</tr>
+		<tr>
+			<td>Phone: </td>
+			<td><input type= text name = "name" required/></td>
+		</tr>
+		<tr>
+			<td>Email: </td>
+			<td><input type= email name = "email" required/></td>
+		</tr>
+		<table>
+		<br/>
+		<br/>
+		<fieldset>
+			<legend>Which taxi do you require?</legend>
+			<input type= "radio" name="taxi" value="car"/>Car<br/>
+			<input type= "radio" name="taxi" value="car"/>Van<br/>
+			<input type= "radio" name="taxi" value="car"/>Tuk Tuk<br/>
+		</fieldset>
+		<br/>
+		<br/>
+		<fieldset>
+			<legend>Extras</legend>
+			<input type= "checkbox" name="baby_seat" />Baby Seat<br/>
+			<input type= "checkbox" name="wheel_chair"/>WheelChair Access<br/>
+			<input type= "checkbox" name="stock_tip"/>Stock Tip<br/>
+		</fieldset>
+		
+		<br/>
+		<br/>
+		PickUp Date/Time <input type="date"><br/>
+		<p>
+			<label>pickup Place 
+			<select>
+				<option value="">--select one--</option>
+				<option value="office">Office</option>
+				<option value="town_hall">Town Hall</option>
+				<option value="telepathy">We will guess</option>
+			</select>
+			</label>
+		</p>
+		<p>
+			<label>
+				Drop off Place: <input type= text name="dropoff" required list="destinations"/>
+			</label>
+			<datalist id="destinations">
+				<option value="Airport">
+				<option value="Beach">
+				<option value="fred's house">
+			</datalist>
+		</p>
+		<p>
+			<label>Special Instruction: 
+				<textarea>
+				</textarea>
+			</label>
+		</p>
+		<br/>
+		<button>Submit Booking</button>
+		</form>
+	</body>
+</html>
